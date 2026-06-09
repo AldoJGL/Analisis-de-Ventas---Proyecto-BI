@@ -20,3 +20,16 @@ Luego se reviso la tabla y las columnas para limpiar el dataset con los siguient
 - Conversión de fechas
 - Eliminación de nulos
 - Validación de tipos de datos
+
+Hecho esto, pasamos a llamar al dataframe como df_filtered, ya que se filtraron los primeros datos.
+
+Seguido de eso, se hicieron los primeros KPIs de la siguiente manera:
+``` python
+ventas_totales = df_filtered["MontoNeto"].sum()
+utilidad_total = df_filtered["UtilidadBruta"].sum()
+margen_promedio = df_filtered["MargenBruto"].mean()
+
+print(f"${ventas_totales:,.2f}")
+print(f"${utilidad_total:,.2f}")
+print(f"${margen_promedio:,.2f}")
+```
