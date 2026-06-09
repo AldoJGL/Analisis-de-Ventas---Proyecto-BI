@@ -38,6 +38,5 @@ Despues se realizo un filtrado por las ventas de cada mes, para eso usamos la fe
 ventas_mes = df_filtered.groupby(df_filtered["Fecha"].dt.to_period("M"))["MontoNeto"].sum()
 ventas_mes
 ```
-Que nos dio el siguiente resultado:
-![Ventas cada mes]
-(imagenes/VentasMes.png)
+Y nos dio el siguiente resultado
+![Visualizacion de Ventas cada Mes](imagenes/VentasMes.png)
