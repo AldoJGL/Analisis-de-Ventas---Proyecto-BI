@@ -33,3 +33,10 @@ print(f"${ventas_totales:,.2f}")
 print(f"${utilidad_total:,.2f}")
 print(f"${margen_promedio:,.2f}")
 ```
+Despues se realizo un filtrado por las ventas de cada mes, para eso usamos la fecha de cada venta y el monto neto
+``` python
+ventas_mes = df_filtered.groupby(df_filtered["Fecha"].dt.to_period("M"))["MontoNeto"].sum()
+ventas_mes
+```
+Que nos dio el siguiente resultado:
+(imagenes/VentasMes.png)
