@@ -158,11 +158,5 @@ Y se generó la siguiente gráfica:
 Esta comparación permite identificar si las sucursales con mayores ventas también son las que generan mayores utilidades.
 
 ## Conclusiones
-
-A través de este análisis se pudieron identificar las sucursales con mayores ventas, los canales de venta más utilizados y el comportamiento de las ventas a lo largo del tiempo.
-
-También se observó que una sucursal con mayores ventas no necesariamente es la que genera mayor utilidad, por lo que es importante analizar ambas métricas antes de tomar decisiones.
-
-El análisis permitió obtener una visión general del desempeño del negocio utilizando Python, Pandas y Matplotlib para transformar datos en información útil.
-
-Este proyecto permitió aplicar conceptos de limpieza de datos, análisis exploratorio, cálculo de KPIs y visualización de información mediante gráficas.
+Durante el desarrollo del proyecto practiqué la carga y limpieza de datos, la validación de tipos de datos, el uso de DataFrames en Pandas, la creación de KPIs, el agrupamiento de información mediante `groupby` y la generación de visualizaciones con Matplotlib.
+Pienso que este proyecto me puede ayudar a desarrollar habilidades necesarias para desempeñarme en áreas de análisis de datos y Business Intelligence, ya que me permitió trabajar con un conjunto de datos similar a los que podrían encontrarse en un entorno real.
