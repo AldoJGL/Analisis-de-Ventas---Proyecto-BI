@@ -16,3 +16,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 df = pd.read_csv("FactVentas.csv")
 ```
+Luego se reviso la tabla y las columnas para limpiar el dataset con los siguientes pasos:
+- Conversión de fechas
+- Eliminación de nulos
+- Validación de tipos de datos
