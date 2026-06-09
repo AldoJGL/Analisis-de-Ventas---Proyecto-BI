@@ -39,4 +39,5 @@ ventas_mes = df_filtered.groupby(df_filtered["Fecha"].dt.to_period("M"))["MontoN
 ventas_mes
 ```
 Que nos dio el siguiente resultado:
+![Ventas cada mes]
 (imagenes/VentasMes.png)
