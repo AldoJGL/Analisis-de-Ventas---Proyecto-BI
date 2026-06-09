@@ -47,3 +47,19 @@ ventas_mes.plot(figsize=(10,5))
 plt.show()
 ```
 ![Grafica de Ventas cada Mes](imagenes/GraficaVentasMes.png)
+
+Despues se hicieron 2 graficas mas, estas se hicieron para saber que sucursal tenia mas ventas y para saber que canales tienen mas ventas, se hicieron de la siguiente forma:
+``` python
+sucursalmasventas = df_filtered.groupby("SucursalID")["MontoNeto"].sum().sort_values(ascending=False)
+
+sucursalmasventas.plot(kind="barh")
+plt.show()
+```
+``` python
+canales = df_filtered.groupby("Canal")["MontoNeto"].sum()
+
+canales.plot(kind="pie")
+```
+Y estos fueron los resultados de cada una:
+![Grafica de Sucursales Mas Ventas](imagenes/GraficaSucursalMasVentas.png)
+![Grafica de Canales](imagenes/GraficaCanales.png)
