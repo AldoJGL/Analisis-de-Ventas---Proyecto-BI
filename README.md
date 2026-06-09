@@ -40,3 +40,10 @@ ventas_mes
 ```
 Y nos dio el siguiente resultado
 ![Visualizacion de Ventas cada Mes](imagenes/VentasMes.png)
+
+Y se procedio a realizar la siguiente grafica con el siguiente codigo:
+``` python
+ventas_mes.plot(figsize=(10,5))
+plt.show()
+```
+![Grafica de Ventas cada Mes](imagenes/GraficaVentasMes.png)
