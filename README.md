@@ -63,3 +63,31 @@ canales.plot(kind="pie")
 Y estos fueron los resultados de cada una:
 ![Grafica de Sucursales Mas Ventas](imagenes/GraficaSucursalMasVentas.png)
 ![Grafica de Canales](imagenes/GraficaCanales.png)
+
+Por ultimo se comparo el monto neto que genera cada sucursal con la utilidad bruta de esta misma, esto ya que el que se venda mucho no significa que se saca la maxima ganancia, para eso se escribio:
+``` python
+sucursal_analisis = df_filtered.groupby("SucursalID").agg({
+    "MontoNeto":"sum",
+    "UtilidadBruta":"sum"
+})
+
+sucursal_analisis = sucursal_analisis.sort_values(
+    by="MontoNeto",
+    ascending=False
+)
+
+sucursal_analisis
+```
+Se arrojo una tabla en donde en primer lugar aparece la sucursal con mas ventas y asi para abajo, despues se tiene el monto neto y la utilidad bruta que se genera, y pasamos a realizar una grafica para comparar, se realizo de la siguiente forma:
+``` python
+sucursal_analisis.plot(
+    kind="bar"
+)
+
+plt.title("Ventas vs Utilidad por Sucursal")
+plt.xlabel("Sucursal")
+plt.ylabel("Monto")
+plt.show()
+```
+Y se generola siguiente grafica:
+![Grafica de Ventas vs Utilidad](imagenes/GraficaVentasvsUtilidad.png)
