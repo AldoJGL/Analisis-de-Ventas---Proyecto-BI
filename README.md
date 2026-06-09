@@ -2,7 +2,15 @@
 
 ## Objetivo
 Analizar el comportamiento de ventas, utilidad y rendimiento por sucursal, canal y producto.
-### Lo primero que se hizo fue cargar los datos
+
+## Herramientas que se usaron
+- Python.
+- Libreria Pandas: Para analizar los datos.
+- Libreria Matplotlib: Para visualizar los datos.
+- Jupyter Notebooks.
+
+## Analisis 
+Lo primero que se hizo fue cargar los datos
 ``` python
 import pandas as pd
 import matplotlib.pyplot as plt
